@@ -2,6 +2,14 @@
 
 A program that takes a log file of API requests and produces reports based off it
 
+The program can create the following reports:
+
+1. Top 10 requested pages and the number of times each page was requested
+2. Percentage of successful requests
+3. Percentage of unsuccessful requests
+4. Top 10 unsuccessful page requests and the number of times each page was requested unsuccessfully
+5. Top 10 hosts making the most requests and the number of times each host made a request
+
 ## Getting Started
 
 These instructions will show you how to download and run the program
@@ -36,27 +44,30 @@ The main program, Parser.java can be ran in a few ways:
 
 `java Parser.java` - default option, uses NASA_access_log_Aug95 as the default file, and presents user with menu to select reporting option
 
-<img width="400" src="/report_menu.png">
+<img width="600" src="/report_menu.png">
 
-Which report would you like to generate? Please type a number 1-5
-1. Top 10 requested pages
-2. Percentage of successful requests
-3. Percentage of unsuccessful requests
-4. Top 10 unsuccessful page requests
-5. Top 10 hosts making the most requests
 
-`java Parser.java -f small_log` - using "-f" flag, the file name can be specified in the terminal, for example, this will run using small_log as the file
+`java Parser.java -f small_log` - using "-f" flag, the file name can be specified in the terminal, for example, this will run using small_log as the file, and then present the user with menu to select reporting option
 `java Parser.java -o 3` - using "-o" flag, the reporting option can be specified in the terminal, for example this will run a report on the default file to calculate the percentage of unsuccessful requests (option 3)
 `java Parser.java -f small_log -o 2` both the file and the option can be specified in the terminal
 
 Note, whenever the "-o" flag is not given in the terminal, the following menu will be shown until a valid option is chosen
 
-Which report would you like to generate? Please type a number 1-5
-1. Top 10 requested pages
-2. Percentage of successful requests
-3. Percentage of unsuccessful requests
-4. Top 10 unsuccessful page requests
-5. Top 10 hosts making the most requests
+<img width="600" src="/report_menu.png">
 
 
 ### Testing
+
+Unit Testing can be done by running `java -ea Testing`
+
+This will run Testing.java which has a set of assertions to run functions of Parser.java against
+
+## Assumptions/Dependencies
+
+Logs must be in [common log format](https://httpd.apache.org/docs/1.3/logs.html#common)
+
+Logs that are not in this format will be skipped by the program for reporting purposes
+
+
+
+
