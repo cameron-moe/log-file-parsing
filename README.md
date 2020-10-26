@@ -36,27 +36,25 @@ The main program, Parser.java can be ran in a few ways:
 
 `java Parser.java` - default option, uses NASA_access_log_Aug95 as the default file, and presents user with menu to select reporting option
 
--------------------------------------------------------------------------
 Which report would you like to generate? Please type a number 1-5
 1. Top 10 requested pages
 2. Percentage of successful requests
 3. Percentage of unsuccessful requests
 4. Top 10 unsuccessful page requests
 5. Top 10 hosts making the most requests
--------------------------------------------------------------------------
+
 `java Parser.java -f small_log` - using "-f" flag, the file name can be specified in the terminal, for example, this will run using small_log as the file
 `java Parser.java -o 3` - using "-o" flag, the reporting option can be specified in the terminal, for example this will run a report on the default file to calculate the percentage of unsuccessful requests (option 3)
 `java Parser.java -f small_log -o 2` both the file and the option can be specified in the terminal
 
 Note, whenever the "-o" flag is not given in the terminal, the following menu will be shown until a valid option is chosen
 
--------------------------------------------------------------------------
 Which report would you like to generate? Please type a number 1-5
 1. Top 10 requested pages
 2. Percentage of successful requests
 3. Percentage of unsuccessful requests
 4. Top 10 unsuccessful page requests
 5. Top 10 hosts making the most requests
--------------------------------------------------------------------------
+
 
 ### Testing
