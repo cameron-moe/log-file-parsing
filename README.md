@@ -36,6 +36,8 @@ The main program, Parser.java can be ran in a few ways:
 
 `java Parser.java` - default option, uses NASA_access_log_Aug95 as the default file, and presents user with menu to select reporting option
 
+<img width="400" src="/report_menu.png">
+
 Which report would you like to generate? Please type a number 1-5
 1. Top 10 requested pages
 2. Percentage of successful requests
