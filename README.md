@@ -18,4 +18,16 @@ Clone the log-file-parsing repository to your local machine
 
 Step 2:
 
-Download the [NASA_access_log_Aug95 file](https://urldefense.com/v3/__ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz__;!!GqivPVa7Brio!Kv_gR_pGjGVzr4ZPJtCjYJ1tBUqZXBrt-vbJ2Q1zYWl5FC_g_kyta5MCXsBRddoc5w$) and move the file into the cloned repo with Parser.Java, Testing.Java, blank_log, small_log files
+Download the [NASA_access_log_Aug95 file](https://urldefense.com/v3/__ftp://ita.ee.lbl.gov/traces/NASA_access_log_Aug95.gz__;!!GqivPVa7Brio!Kv_gR_pGjGVzr4ZPJtCjYJ1tBUqZXBrt-vbJ2Q1zYWl5FC_g_kyta5MCXsBRddoc5w$) and move the file into the cloned repo with Parser.Java, Testing.Java, blank_log, small_log files.  (This file is 160 MB which is too large to upload to github)
+
+Step 3:
+
+Compile Parser.java:
+
+`javac Parser.java`
+
+Step 4:
+
+Compile Testing.java:
+
+`javac Testing.java`
