@@ -70,6 +70,8 @@ Logs must be in [common log format](https://httpd.apache.org/docs/1.3/logs.html#
 
 Logs that are not in this format will be skipped by the program for reporting purposes
 
+Dependencies: [Java 8 or newer](https://www.oracle.com/java/technologies/javase-downloads.html)
+
 
 
 
